@@ -286,3 +286,12 @@ function showHats(hats){
 }
 
 showHats(hats);
+
+function eleminacionaFaza(hats){
+    for (const hat in hats){
+        console.log(`   Sesir ${hat}`);
+        for(const teamName in hats[hat]){
+            console.log(`    ${teamName}`);
+        }
+    }
+} 
