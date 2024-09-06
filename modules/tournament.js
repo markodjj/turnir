@@ -67,7 +67,7 @@ class Tournament {
                 let points = teamData["points"]
                 let conceded = teamData["conceded"]
                 let dif = teamData["dif"]
-                console.log(`   ${i}. ${name.padEnd(20) }   ${wins}/${losses}/${points}/${scored}/${conceded}/${dif}`);
+                console.log(`   ${i}. ${name.padEnd(20) }   ${wins} / ${losses} / ${points} / ${scored} / ${conceded} / ${dif > 0 ? "+"+dif : dif}`);
                 i++;
             }
             i = 0;

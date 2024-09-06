@@ -43,7 +43,7 @@ function showFinalPlasmanByGroups(plasmanGroups){
         console.log(`Grupa ${groupName} (Ime - pobede/porazi/bodovi/postignuti kosevi/primeljeni kosevi/kos razlika)`)
         let i = 1;
         for (const team in plasmanGroups[groupName]) {
-            console.log(`   ${i}. ${team}    ${plasmanGroups[groupName][team]["wins"]}/${plasmanGroups[groupName][team]["losses"]}/${plasmanGroups[groupName][team]["points"]}/${plasmanGroups[groupName][team]["scored"]}/${plasmanGroups[groupName][team]["conceded"]}/${plasmanGroups[groupName][team]["dif"]}`);
+            console.log(`   ${i}. ${team}    ${plasmanGroups[groupName][team]["wins"]} / ${plasmanGroups[groupName][team]["losses"]} / ${plasmanGroups[groupName][team]["points"]} / ${plasmanGroups[groupName][team]["scored"]} / ${plasmanGroups[groupName][team]["conceded"]} / ${plasmanGroups[groupName][team]["dif"]}`);
             i+=1;
         }
         i = 0;
